@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Lines - Privacy Policy</title>
+    <style>
+        :root {
+            --primary-color: #FF69B4;
+            --secondary-color: #FFB6C1;
+            --text-color: #333;
+            --background-color: #FFF5F8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/icon/lovelines.jpg" alt="Love Lines Logo" class="logo">
+        <h1>Love Lines Privacy Policy</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to Love Lines! We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        </section>
+
+        <section>
+            <h2>Information We Collect</h2>
+            <p>Love Lines is designed to be privacy-friendly and collects minimal personal information:</p>
+            <ul>
+                <li>Favorites: We store your favorite quotes locally on your device using shared preferences</li>
+                <li>Device Information: Basic device information for app functionality</li>
+                <li>Usage Data: Anonymous usage statistics to improve app performance</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Save and restore your favorite quotes</li>
+                <li>Improve app performance and user experience</li>
+                <li>Fix bugs and technical issues</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Storage</h2>
+            <p>All your personal data is stored locally on your device. We do not transmit or store your information on external servers. Your favorites and preferences are saved using your device's local storage.</p>
+        </section>
+
+        <section>
+            <h2>Permissions</h2>
+            <p>Love Lines requires the following permissions:</p>
+            <ul>
+                <li>Storage: To save and share quotes</li>
+                <li>Internet: To check for updates and share content</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>We use the following third-party services:</p>
+            <ul>
+                <li>Share Plus: For sharing quotes</li>
+                <li>Screenshot: For capturing and sharing quotes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>Love Lines is suitable for all ages and does not collect any personal information from children under 13. If you are a parent and discover that your child has provided us with personal information, please contact us.</p>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>Email: support@lovelines.app</p>
+        </section>
+
+        <div class="last-updated">
+            Last Updated: <span id="lastUpdated"></span>
+        </div>
+    </div>
+
+    <script>
+        // Set the last updated date
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Add smooth scrolling for better user experience
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
